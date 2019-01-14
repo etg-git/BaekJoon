@@ -34,6 +34,9 @@ public class Q3613 {
                if ((int)K.charAt(0) < 97) {
                    System.out.println("Error!");break;
                }
+               else if((int)K.charAt(K.length()-1) < 97) {
+                   System.out.println("Error!");break;
+               }
                 tok = K.charAt(i);
                 int a = (int) tok;
                 if (a >= 97) {
@@ -42,9 +45,7 @@ public class Q3613 {
                     a = a + 32;
                     x = x + "_" + (char) a;
                 }
-            }else if(K.charAt(i) == '_') {
-               System.out.println("Error!");break;
-           }
+            }
 
         }System.out.print(x);
     }
