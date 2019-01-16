@@ -12,6 +12,7 @@ public class Q10869 {
         System.out.println(a + b);
 //        System.out.println(a + b);
         System.out.println(a - b);
+//        System.out.println(a - b);
         System.out.println(a * b);
         System.out.println(a / b);
         System.out.println(a % b);
