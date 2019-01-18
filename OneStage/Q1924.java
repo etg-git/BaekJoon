@@ -3,7 +3,7 @@ package BaekJoon.OneStage;
 import java.util.Scanner;
 
 public class Q1924 {
-    public static void main(String[] args) {
+public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int moon = sc.nextInt();
         int sun = sc.nextInt();
@@ -13,8 +13,8 @@ public class Q1924 {
 
         int a = sun;
         for (int i = 0; i < moon - 1; i++) {
-            a = a + month[i];//그전달까지와 sun을 합한다.
+        a = a + month[i];//그전달까지와 sun을 합한다.
         }
         System.out.println(day[a % 7]);
-    }
-}
+        }
+        }
