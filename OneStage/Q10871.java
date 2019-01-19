@@ -1,29 +1,23 @@
 package BaekJoon.OneStage;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+        import java.io.BufferedReader;
+        import java.io.IOException;
+        import java.io.InputStreamReader;
 
 public class Q10871 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String K = br.readLine();
-        String J = br.readLine();
-        StringTokenizer st = new StringTokenizer(K);
+        String a = br.readLine();
+        String b = br.readLine();
 
-        int a = Integer.parseInt(st.nextToken());
-        int b = Integer.parseInt(st.nextToken());
-        int seq = 0;
+        String[] token1 = a.split(" ");
+        String[] token2 = b.split(" ");
 
-        String[] sp = J.split(" ");
-        for(int i=0; i<sp.length; i++) {
-            int temp = 0;
-            seq = Integer.parseInt(sp[i]);
-                if(seq <= a && seq < b) {
-                    temp = seq;
-                    System.out.print(temp + " ");
-                }
+        for(int i = 0; i < Integer.parseInt(token1[0]); i++) {
+            if(Integer.parseInt(token1[1]) > Integer.parseInt(token2[i])) {
+                System.out.print(token2[i] + " ");
+            }
         }
     }
 }
+
