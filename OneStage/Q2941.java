@@ -1,4 +1,4 @@
-//https://www.acmicpc.net/problem/2941
+//https://www.acmicpc.net/problem/2941 //크로아티아 언어
 package BaekJoon.OneStage;
 
 import java.io.BufferedReader;
@@ -10,9 +10,9 @@ public class Q2941 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String K = br.readLine();
         String[] token = {"c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="};
-            for(int b=0; b<token.length; b++) {
-                if (K.contains(token[b])) {
-                 K = K.replaceAll(token[b], "*");
+            for(String tokens : token) {
+                if (K.contains(tokens)) {
+                 K = K.replaceAll(tokens, "?");
                 }
             }
         System.out.println(K.length());
