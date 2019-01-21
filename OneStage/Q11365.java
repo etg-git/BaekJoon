@@ -23,7 +23,7 @@ public class Q11365 {
             for(int i=0; i<a.length(); i++) {
                 System.out.print(que.removeLast());
                 if(i==a.length()-1) {
-                    System.out.println("");
+                    System.out.println();
                 }
             }
 
