@@ -12,6 +12,7 @@ public class Q4344 {
         int K = Integer.parseInt(br.readLine());
 
         for(int i=0; i<K; i++) {
+            //,,,,,,
 
         }
     }
