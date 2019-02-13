@@ -15,6 +15,8 @@ public class Q1018 {
 
         for(int i=0; i<a; i++) {
             String chess = br.readLine();
+
+
     }
 
     }
